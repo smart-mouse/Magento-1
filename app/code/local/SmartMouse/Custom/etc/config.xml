@@ -28,5 +28,13 @@
                 </entities>
             </custom_resource>
         </models>
+
+        <resources>
+            <custom_setup>
+                <setup>
+                    <module>SmartMouse_Custom</module>
+                </setup>
+            </custom_setup>
+        </resources>
     </global>
 </config>
