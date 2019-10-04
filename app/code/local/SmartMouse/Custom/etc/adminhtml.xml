@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <custom module="custom">
+            <title>Custom Menu</title>
+            <sort_order>100</sort_order>
+            <action>*/custom</action>
+            <children>
+                <custom module="custom">
+                    <title>Custom Link</title>
+                    <sort_order>100</sort_order>
+                    <action>*/custom</action>
+                </custom>
+            </children>
+        </custom>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <custom>
+                        <children>
+                            <custom module="custom">
+                                <title>Custom</title>
+                                <sort_order>100</sort_order>
+                            </custom>
+                        </children>
+                    </custom>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
