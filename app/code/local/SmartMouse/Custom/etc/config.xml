@@ -5,4 +5,12 @@
             <version>1.0.0</version>
         </SmartMouse_Custom>
     </modules>
+
+    <global>
+        <helpers>
+            <custom>
+                <class>SmartMouse_Custom_Helper</class>
+            </custom>
+        </helpers>
+    </global>
 </config>
