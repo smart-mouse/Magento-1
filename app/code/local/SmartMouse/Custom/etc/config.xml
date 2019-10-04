@@ -12,5 +12,21 @@
                 <class>SmartMouse_Custom_Helper</class>
             </custom>
         </helpers>
+
+        <models>
+            <custom>
+                <class>SmartMouse_Custom_Model</class>
+                <resourceModel>custom_resource</resourceModel>
+            </custom>
+
+            <custom_resource>
+                <class>SmartMouse_Custom_Model_Resource</class>
+                <entities>
+                    <custom>
+                        <table>custom</table>
+                    </custom>
+                </entities>
+            </custom_resource>
+        </models>
     </global>
 </config>
