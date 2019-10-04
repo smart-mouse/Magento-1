@@ -37,4 +37,16 @@
             </custom_setup>
         </resources>
     </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <custom before="Mage_Adminhtml">SmartMouse_Custom_Adminhtml</custom>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>
