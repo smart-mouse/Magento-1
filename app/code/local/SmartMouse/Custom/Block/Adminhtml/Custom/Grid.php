@@ -60,7 +60,8 @@ class SmartMouse_Custom_Block_Adminhtml_Custom_Grid extends Mage_Adminhtml_Block
                 'header'=> $this->__('Date'),
                 'type' => 'datetime',
                 'index' => 'date',
-                'format'	=> Mage::app()->getLocale()->getDateFormat()
+                'format'	=> Mage::app()->getLocale()->getDateFormat(),
+                'renderer' => 'SmartMouse_Custom_Block_Adminhtml_Custom_Renderer_Date'
             )
         );
 
