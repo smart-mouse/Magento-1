@@ -5,4 +5,13 @@
 			<block type="custom/adminhtml_custom" name="custom"/>
 		</reference>
 	</adminhtml_custom_index>
+
+	<adminhtml_custom_edit>
+		<reference name="content">
+			<block type="custom/adminhtml_custom_edit" name="custom_edit" />
+		</reference>
+		<reference name="left">
+			<block type="custom/adminhtml_custom_edit_tabs" name="custom_edit_tabs" />
+		</reference>
+	</adminhtml_custom_edit>
 </layout>
