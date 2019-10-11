@@ -36,6 +36,12 @@
                 </setup>
             </custom_setup>
         </resources>
+
+        <blocks>
+            <custom>
+                <class>SmartMouse_Custom_Block</class>
+            </custom>
+        </blocks>
     </global>
 
     <admin>
@@ -49,4 +55,14 @@
             </adminhtml>
         </routers>
     </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <custom>
+                    <file>custom.xml</file>
+                </custom>
+            </updates>
+        </layout>
+    </adminhtml>
 </config>
