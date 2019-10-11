@@ -112,4 +112,29 @@ class SmartMouse_Custom_Adminhtml_CustomController
         }
         $this->_redirect('*/*/index');
     }
+
+    public function deleteAction()
+    {
+        if ($id = $this->getRequest()->getParam('game_id')) {
+
+            $model = Mage::getModel('custom/custom');
+
+            try {
+                $model->load($id);
+                if ($model->getId()) {
+                    $image = $model->getImage();
+                    if ($image && file_exists('media' . DS . $image)) {
+                        unlink('media' . DS . $image);
+                    }
+
+                    $model->delete();
+                    $this->_redirect('*/*/index');
+                    return;
+                }
+            } catch (Exception $e) {
+                $this->_getSession()->addError($e->getMessage());
+            }
+        }
+        $this->_redirect('*/*/index');
+    }
 }
