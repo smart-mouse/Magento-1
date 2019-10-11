@@ -40,4 +40,9 @@ class SmartMouse_Custom_Adminhtml_CustomController
             ->loadLayout()
             ->renderLayout();
     }
+
+    public function newAction()
+    {
+        $this->_forward('edit');
+    }
 }
