@@ -34,7 +34,8 @@ class SmartMouse_Custom_Block_Adminhtml_Custom_Grid extends Mage_Adminhtml_Block
         $this->addColumn('image',
             array(
                 'header'=> $this->__('Image'),
-                'index' => 'image'
+                'index' => 'image',
+                'renderer' => 'SmartMouse_Custom_Block_Adminhtml_Custom_Renderer_Image'
             )
         );
 
